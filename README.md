@@ -2,7 +2,7 @@
 
 Filament project with a custom theme.
 
-![screenshot](https://github.com/leandrocfe/filament-custom-theme/blob/master/screenshots/theme-1.jpg?raw=true)
+![screenshot](https://github.com/leandrocfe/filament-custom-theme/blob/a5f6977195420513ae8460f5eecda5222321b577/screenshots/theme-1.jpg?raw=true)
 
 ## Installation
 
