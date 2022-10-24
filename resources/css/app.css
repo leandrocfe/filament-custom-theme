@@ -1,3 +1,4 @@
+/*resources\css\app.css*/
 @import "../../vendor/filament/filament/resources/css/app.css";
 
 * {
@@ -9,6 +10,10 @@
     @apply bg-primary-800 bg-gradient-to-tl from-primary-600 to-primary-700 dark:bg-gray-800 dark:border-gray-700 dark:from-gray-800 dark:to-gray-800;
 }
 
+.filament-sidebar-nav .border-t {
+    @apply border-primary-600;
+}
+
 .filament-sidebar-item {
     @apply text-white;
 }
@@ -17,26 +22,22 @@
     @apply text-primary-50 bg-primary-700 dark:bg-gray-900 dark:text-white;
 }
 
-.filament-main-content {
-    @apply text-gray-600 dark:text-gray-400;
-}
-
-.filament-main {
-    @apply bg-primary-50 dark:bg-gray-900 dark:border-gray-700;
-}
-
-.filament-sidebar-nav .border-t {
-    @apply border-primary-600;
+.filament-sidebar-group svg {
+    @apply text-primary-300;
 }
 
 .tracking-wider {
     @apply text-sm text-primary-200;
 }
 
-.filament-sidebar-group svg {
-    @apply text-primary-300;
-}
-
 .filament-brand {
     @apply text-primary-700;
+}
+
+.filament-main {
+    @apply bg-primary-50 dark:bg-gray-900 dark:border-gray-700;
+}
+
+.filament-main-content {
+    @apply text-gray-600 dark:text-gray-400;
 }
