@@ -6,10 +6,36 @@ Filament project with a custom theme.
 
 ## Installation
 
-You may run the following commands in your terminal:
+Clone the repository:
+
+```bash
+git clone https://github.com/leandrocfe/filament-custom-theme.git
+```
+
+Switch to the repo folder:
 
 ```bash
 cd filament-custom-theme
+```
+
+Create a new MySQL database called `filament_custom_theme`. Copy the example env file and set the database connection:
+
+```bash
+cp .env.example .env
+```
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=filament_custom_theme
+DB_USERNAME=YOUR_USERNAME
+DB_PASSWORD=YOUR_PASSWORD
+```
+
+You may run the following commands in your terminal:
+
+```bash
 composer install
 php artisan migrate --seed
 npm install && npm run build
@@ -23,7 +49,7 @@ php artisan serve
 ```
 Once you have started the Artisan development server, your application will be accessible in your web browser at [http://localhost:8000/admin](http://localhost:8000/admin).
 
-You may choose an user account (users table) and access the Filament Admin Panel.
+You can choose a user's credentials and authenticate to access the Filament Admin Panel (default password: *password*).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
